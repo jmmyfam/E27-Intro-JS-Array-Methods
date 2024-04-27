@@ -23,7 +23,6 @@ export const card = (object) => {
       <p class="card-text">${object.author}<br />
       <small class="text-muted">${object.type.toUpperCase()}</small>
       </p>
-
       <!-- Button trigger modal -->
       <button 
         type="button" 
@@ -37,7 +36,6 @@ export const card = (object) => {
       </button>
     </div>
   </div>
-
   
   <!-- Modal -->
   <div class="modal fade" id="modal-${object.id}" tabindex="-1" aria-labelledby="${object.id}" aria-hidden="true">
@@ -50,7 +48,6 @@ export const card = (object) => {
         ${object.youTubeId ? youTubeVid(object.youTubeId) : ''}
         <div class="modal-body">
           ${object.description}
-
         <h6 class="mt-3 externalLink">${object.externalLink ? `Reference: <a target="_blank" href="${object.externalLink}">${object.externalLink}</a>` : ''}</h6>
         </div>
       </div>
